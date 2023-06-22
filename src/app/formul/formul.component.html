@@ -1,0 +1,32 @@
+
+  <div class="container">
+  <h1 *ngIf = "familles && familles.length > 0 "  >{{title}}</h1>
+  <button class="btn btn-primary mb-3 w-2 mt-3" (click)="faireafficher()" >
+    <span>
+      {{showbadge ? 'Cacher':'Afficher'}} Option
+    </span>
+  </button>
+  <div class="my-2">
+    <div class="row">
+      <div class=" col-md-4">
+        <span class="affiche">afficher : </span>
+        <b>{{ chercher }}</b>
+      </div>
+      <div class="row col-md-8 mb-4">
+        <input  [(ngModel)] = "chercher" type="text" class="text"  placeholder="recherche...">
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-3">
+      <div class="col mb-3"  *ngFor="let famille of filtrerfamille">
+        <div class="card">
+          <img src={{famille.imgurl}} class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{famille.tittle}}</h5>
+            <p class="card-text">{{famille.description}}</p>
+            <span class="badge rounded-pill text-bg-warning" *ngIf = "showbadge">Autre option</span>
+          </div>
+        </div>
+      </div>
+
+</div>

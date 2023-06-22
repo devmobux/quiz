@@ -1,0 +1,11 @@
+.text{
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.1);
+    padding: 3px;
+    border:none ;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+}
+.container{
+    width: 100%;
+    background: repeating-radial-gradient(rgb(133, 218, 240) ,white,rgba(0,0,0,0.2));
+}
