@@ -1,0 +1,36 @@
+*{
+    margin: 0;padding: 0;
+}
+.container{
+
+    
+    margin-top: 20%;  
+    margin-left: 15%;
+}
+.ens{
+    font-size: 20px;
+    margin-left: 18%;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  
+}
+.select{
+    width:60vh;
+    padding: 10px;
+    
+
+}
+.message{
+    margin-left: 15%;
+    margin-top: 20px;
+    width: 60vh;
+}
+.cali{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: brown;
+}

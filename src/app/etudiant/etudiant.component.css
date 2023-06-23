@@ -1,0 +1,27 @@
+.contain{
+    margin-left: 18%;
+    margin-top: 20%;
+}
+.ens{
+    font-size: 20px;
+    margin-left: 28%;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  
+}
+.message{
+    margin-left: 0%;
+    margin-top: 20px;
+    width: 60vh;
+}
+input{
+    width: 50vh;
+    padding: 10px;
+    border-radius: 8px;
+}
+button{
+    margin-left: 2px;
+    width: 10vh;
+    padding: 11px;
+
+}

@@ -1,0 +1,24 @@
+
+<div class="row">
+  <div class="col-sm-6">
+    <div *ngFor="let listquestion of listquestions let i = index">
+      <div class="container">
+        <div class="ens"> Enseignant </div>
+        
+          <select class="select">
+              <option value={{listquestion.question1}}>question1</option>
+              <option value={{listquestion.question2}}>question2</option>
+              <option value={{listquestion.question3}}>question3</option>
+          </select>
+      </div>
+      <textarea name="" id="" cols="60" rows="6" class="message">{{question}}</textarea>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <app-etudiant>[questionEnseignant]="question" (reponsefinal)="verification($event)" </app-etudiant>
+  </div>
+</div>
+<div class="cali">calification:
+     <span>{{cali}}</span>
+</div>
+
